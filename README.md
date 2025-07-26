@@ -23,7 +23,7 @@ Sistema completo de gestión de productos con Next.js, TypeScript, Drizzle ORM y
 
 1. **Clonar el repositorio**
 ```bash
-git clone <tu-repositorio>
+git clone https://github.com/JavierGmnDEV/test-product-c.git
 cd crud-productos
 ```
 
@@ -34,10 +34,10 @@ npm install
 
 3. **Configurar variables de entorno**
 ```bash
-cp .env.example .env.local
+cp .env
 ```
 
-Editar `.env.local` con tu configuración de base de datos:
+Editar `.env` con tu configuración de base de datos:
 ```env
 DATABASE_URL="postgresql://usuario:password@localhost:5432/nombre_db"
 ```
@@ -152,6 +152,4 @@ npm run type-check   # Verificación de tipos
 4. Push a la rama
 5. Abrir un Pull Request
 
-## 📄 Licencia
 
-MIT License
