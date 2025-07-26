@@ -4,6 +4,9 @@ import { ProductForm } from '@/components/ui/Form/ProductForm';
 import { getProductById } from '@/lib/actions/actions';
 import { ProductFormValues } from '@/lib/schemas/products';
 
+// Make this page dynamic
+export const dynamic = 'force-dynamic';
+
 interface EditProductPageProps {
   params: Promise<{
     id: string;

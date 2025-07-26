@@ -16,7 +16,7 @@ export function DeleteButton({ productId }: DeleteButtonProps) {
       toast.success('Producto eliminado correctamente');
       // Refresh the page to show updated list
       window.location.reload();
-    } catch (error) {
+    } catch {
       toast.error('Error al eliminar el producto');
     }
   };
