@@ -82,7 +82,7 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
         </Card>
 
         {/* Lista de Productos */}
-        <div className="grid gap-6">
+        <div className="grid gap-6 max-h-80 overflow-y-auto p-16">
           {products.length === 0 ? (
             <Card>
               <CardContent className="flex flex-col items-center justify-center py-12">
