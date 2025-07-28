@@ -1,7 +1,10 @@
-import { config } from 'dotenv';
 import { defineConfig } from "drizzle-kit";
 
-config({ path: '.env' });
+// Solo cargar .env en desarrollo
+if (process.env.NODE_ENV === 'development') {
+  const { config } = await import('dotenv');
+  config({ path: '.env' });
+}
 
 export default defineConfig({
   schema: "./src/db/schema.ts",
